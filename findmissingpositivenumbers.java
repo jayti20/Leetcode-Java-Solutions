@@ -3,7 +3,7 @@ import java.util.*;
 public class hello {
     public static int missingNumber(int arr[], int n) {
         for (int i = 0; i < n; i++) {
-            if (arr[i] <= 0 || arr[i] >= n)
+            if (arr[i] <= 0 || arr[i] > n)
                 arr[i] = n + 1;
         }
         for (int i = 0; i < n; i++) {
